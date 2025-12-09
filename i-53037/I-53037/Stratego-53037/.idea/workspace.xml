@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d4e2ea5-fd29-498a-9ddf-4692c48e16e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Stratego-53037.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/g53037/stratego/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/g53037/stratego/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/g53037/stratego/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/g53037/stratego/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/g53037/stratego/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/g53037/stratego/stratego.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/jacoco.latest.exec" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/jacoco.latest.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/jacoco.latest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/jacoco.latest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/.sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/.sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/Controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/Controller.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/Controller.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.controller/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Marshal.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Marshal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Marshal.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Marshal.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Miner.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Miner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Miner.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Miner.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Spy.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Spy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Spy.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/Spy.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model.pieces/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Board.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Board.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Board.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Game.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Game.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Move.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Move.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Move.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Move.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Piece.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Piece.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Piece.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Piece.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Player.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Player.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Player.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Player.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Position.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Position.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Position.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Square.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Square.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Square.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/Square.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.model/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/ColorText.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/ColorText.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/ColorText.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/ColorText.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/View.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/View.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/View.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/View.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego.view/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/Main.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/Main.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/g53037.stratego/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jacocoverage/report.html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.jacocoverage/report.html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/g53037/stratego/model/pieces/Marshal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/g53037/stratego/model/pieces/Marshal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/g53037/stratego/model/pieces/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/g53037/stratego/model/pieces/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/g53037/stratego/model/pieces/Spy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/g53037/stratego/model/pieces/Spy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/g53037/stratego/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/g53037/stratego/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/g53037/stratego/model/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/g53037/stratego/model/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/g53037/stratego/model/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/g53037/stratego/model/GameTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ij7SiLOY139xJoQwjvNaG4PBWj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="g53037.stratego.Main" />
+      <module name="Stratego-53037" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g53037.stratego.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d4e2ea5-fd29-498a-9ddf-4692c48e16e3" name="Default Changelist" comment="" />
+      <created>1602409148718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602409148718</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1604668595283">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1604668595283" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1604668595282">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1604668595282" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1604668595280">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1604668595280" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1604668595283">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1604668595283" />
+    <state x="317" y="299" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604657955150">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="299" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.800@0.0.1280.800" timestamp="1604657955150" />
+  </component>
+</project>

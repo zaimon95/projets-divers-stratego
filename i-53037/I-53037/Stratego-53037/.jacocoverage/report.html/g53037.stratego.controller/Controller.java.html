@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Controller.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;ProjetStratego&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">g53037.stratego.controller</a> &gt; <span class="el_source">Controller.java</span></div><h1>Controller.java</h1><pre class="source lang-java linenums">package g53037.stratego.controller;
+
+import g53037.stratego.model.*;
+import g53037.stratego.view.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author simon
+ */
+public class Controller {
+
+    /**
+     * the instance of the game to work on
+     */
+    private Model game;
+
+    /**
+     * the view of the game
+     */
+    private View view;
+
+    /**
+     * allows initializing the attributes of the class.
+     *
+     * @param game the instance of the game to work on
+     * @param view the view of the game
+     * @throws NullPointerException if one of the parameters is null
+     */
+<span class="nc" id="L31">    public Controller(Model game, View view) {</span>
+<span class="nc bnc" id="L32" title="All 4 branches missed.">        if (game == null || view == null) {</span>
+<span class="nc" id="L33">            throw new NullPointerException();</span>
+        }
+<span class="nc" id="L35">        this.game = game;</span>
+<span class="nc" id="L36">        this.view = view;</span>
+<span class="nc" id="L37">    }</span>
+
+    /**
+     * initializes the game by calling the methods initialize() of his
+     * attributes
+     */
+    public void initialize() {
+<span class="nc" id="L44">        game.initialize();</span>
+<span class="nc" id="L45">        view.initialize();</span>
+<span class="nc" id="L46">    }</span>
+
+    /**
+     * Permits the launching of a game. 1. verifie if the game can start; 2.
+     * display the help of the game; 3. while the game is not over, display the
+     * game board and ask th user to enter a command 4. Once done, the end of
+     * the game is displayed. If the user enters the command &quot;quit&quot;, a goodbye
+     * message est shown on the screen and the program ends.
+     */
+    public void startGame() {
+<span class="nc" id="L56">        initialize();</span>
+<span class="nc" id="L57">        game.start();</span>
+<span class="nc" id="L58">        view.displayHelpInit();</span>
+<span class="nc" id="L59">        view.displayBoard(game.getBoard(), game.getCurrent());</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        while (!game.isOver()) {</span>
+<span class="nc" id="L61">            view.displayCurrentPlayer(game.getCurrent());</span>
+<span class="nc" id="L62">            String com = view.askCommand();</span>
+<span class="nc bnc" id="L63" title="All 2 branches missed.">            if (com.equalsIgnoreCase(&quot;quit&quot;)) {</span>
+<span class="nc" id="L64">                view.displayOver(game.getWinners());</span>
+<span class="nc" id="L65">                System.exit(0);</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">            } else if (com.startsWith(&quot;select &quot;)) {</span>
+<span class="nc bnc" id="L67" title="All 4 branches missed.">                if ((isInteger(1, com) &amp;&amp; isInteger(2, com))) {</span>
+<span class="nc" id="L68">                    int row = Integer.parseInt(com.split(&quot; &quot;)[1]);</span>
+<span class="nc" id="L69">                    int col = Integer.parseInt(com.split(&quot; &quot;)[2]);</span>
+                    try{
+<span class="nc" id="L71">                        view.displaySelected(game.getSelected(row, col));</span>
+                    }
+<span class="nc" id="L73">                    catch(IllegalStateException e){</span>
+<span class="nc" id="L74">                        view.displayError(&quot;la piece appartient au joueur adverse &quot;</span>
+                                + &quot;ou la case est vide&quot;);
+<span class="nc" id="L76">                    }</span>
+<span class="nc" id="L77">                    view.displayHelpWhenSelected();</span>
+<span class="nc" id="L78">                    String com2 = view.askCommand();</span>
+<span class="nc bnc" id="L79" title="All 2 branches missed.">                    if (com2.equalsIgnoreCase(&quot;moves&quot;)) {</span>
+<span class="nc" id="L80">                        view.displayMoves(game.getMoves());</span>
+<span class="nc bnc" id="L81" title="All 2 branches missed.">                        if(!game.getMoves().isEmpty()){</span>
+<span class="nc" id="L82">                            view.displayHelpWhenMoves();</span>
+<span class="nc" id="L83">                            String com3 = view.askCommand();</span>
+<span class="nc bnc" id="L84" title="All 2 branches missed.">                            if (com3.startsWith(&quot;apply &quot;)) {</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">                                if (isInteger(1, com3)) {</span>
+<span class="nc" id="L86">                                    int num = Integer.parseInt(com3.split(&quot; &quot;)[1]);</span>
+<span class="nc" id="L87">                                    game.apply(game.getMoves().get(num));</span>
+<span class="nc" id="L88">                                    view.displayBoard(game.getBoard(), game.getCurrent());</span>
+<span class="nc" id="L89">                                } else {</span>
+<span class="nc" id="L90">                                    view.displayError(&quot;ce que vous avez introduit &quot;</span>
+                                            + &quot;n'est pas un entier&quot;);
+                                }
+                            }
+<span class="nc bnc" id="L94" title="All 2 branches missed.">                            else if(com3.equalsIgnoreCase(&quot;quit&quot;)){</span>
+<span class="nc" id="L95">                                view.displayOver(game.getWinners());</span>
+<span class="nc" id="L96">                                System.exit(0);</span>
+                            }
+                            else {
+<span class="nc" id="L99">                                view.displayError(&quot;la commande n'existe pas&quot;);</span>
+<span class="nc" id="L100">                                view.displayHelpInit();</span>
+<span class="nc" id="L101">                                view.displayBoard(game.getBoard(), game.getCurrent());</span>
+                            }
+<span class="nc" id="L103">                        }</span>
+                        else{
+<span class="nc" id="L105">                            view.displayBoard(game.getBoard(), game.getCurrent());</span>
+                        }
+                    }
+<span class="nc bnc" id="L108" title="All 2 branches missed.">                    else if(com2.equalsIgnoreCase(&quot;quit&quot;)){</span>
+<span class="nc" id="L109">                        view.displayOver(game.getWinners());</span>
+<span class="nc" id="L110">                        System.exit(0);</span>
+                    }
+                    else {
+<span class="nc" id="L113">                        view.displayError(&quot;la commande n'existe pas&quot;);</span>
+<span class="nc" id="L114">                        view.displayHelpInit();</span>
+<span class="nc" id="L115">                        view.displayBoard(game.getBoard(), game.getCurrent());</span>
+                    }
+<span class="nc" id="L117">                } else {</span>
+<span class="nc" id="L118">                    view.displayError(&quot;ce que vous avez introduit ne sont pas &quot;</span>
+                            + &quot;des entiers&quot;);
+                }
+<span class="nc bnc" id="L121" title="All 2 branches missed.">            } else if (com.equalsIgnoreCase(&quot;moves&quot;)) {</span>
+<span class="nc" id="L122">                view.displayError(&quot;Vous n'avez pas selectionné de piece&quot;);</span>
+
+<span class="nc bnc" id="L124" title="All 2 branches missed.">            } else if(com.equalsIgnoreCase(&quot;hint&quot;)){</span>
+<span class="nc" id="L125">                view.displayBoardHint(game.getBoard(), game.getCurrent());</span>
+            } else {
+<span class="nc" id="L127">                view.displayError(&quot;la commande n'existe pas&quot;);</span>
+<span class="nc" id="L128">                view.displayHelpInit();</span>
+<span class="nc" id="L129">                view.displayBoard(game.getBoard(), game.getCurrent());</span>
+            }
+<span class="nc" id="L131">        }</span>
+<span class="nc" id="L132">        view.displayOver(game.getWinners());</span>
+<span class="nc" id="L133">    }</span>
+
+    /**
+     * verifies if the given substring is an integer
+     * @param index the index of the substring to analyse
+     * @param com the string to analyse
+     * @return true if the substring is an integer, false otherwise
+     */
+    public boolean isInteger(int index, String com) {
+        try {
+<span class="nc" id="L143">            Integer.parseInt(com.split(&quot; &quot;)[index]);</span>
+<span class="nc" id="L144">        } catch (NumberFormatException e) {</span>
+<span class="nc" id="L145">            return false;</span>
+<span class="nc" id="L146">        }</span>
+<span class="nc" id="L147">        return true;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

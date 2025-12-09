@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ProjetStratego">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/ProjetStratego.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

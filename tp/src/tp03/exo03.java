@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tp03;
+import java.util.Scanner;
+/**
+ *
+ * @author simon
+ */
+public class exo03 {
+    public static void main(String[] args) {
+        Scanner cl = new Scanner(System.in);
+        System.out.print("Entrez un nombre a : ");
+        double a = cl.nextDouble();
+        System.out.print("Entrez un nombre b : ");
+        double b = cl.nextDouble();
+        if(a<b){
+            System.out.println("Le maximum entre " + a + " et " + b + " est : " + b);
+        }
+        else{
+            System.out.println("Le maximum entre " + a + " et " + b + " est : " + a);
+        }
+    }
+}
