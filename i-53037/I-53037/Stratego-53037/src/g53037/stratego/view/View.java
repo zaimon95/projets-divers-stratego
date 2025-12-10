@@ -138,12 +138,12 @@ public class View {
                             System.out.print(ColorText.bgtoGreen("  "));
                         } else if (!square.isLand()) {
                             System.out.print(ColorText.bgtoBlue("  "));
-                        }else if(!(square instanceof MagicSquare) && square.isLand()){
+                        } else if(!(square instanceof MagicSquare) && square.isLand()){
                             System.out.print(ColorText.bgtoGrey("  "));
                         }
                     }
                     System.out.print(" | ");
-                }else if(player.getColor() == BLUE){
+                } else if(player.getColor() == BLUE){
                     System.out.print(" | ");
                     if (square.getPiece() instanceof Flag) {
                         displayPieceBLUE(square, "DR", "PE");
@@ -164,7 +164,7 @@ public class View {
                             System.out.print(ColorText.bgtoGreen("  "));
                         } else if (!square.isLand()) {
                             System.out.print(ColorText.bgtoBlue("  "));
-                        }else if(!(square instanceof MagicSquare) && square.isLand()){
+                        } else if(!(square instanceof MagicSquare) && square.isLand()){
                             System.out.print(ColorText.bgtoGrey("  "));
                         }
                     }
@@ -203,12 +203,12 @@ public class View {
                             System.out.print(ColorText.bgtoGreen("  "));
                         } else if (!square.isLand()) {
                             System.out.print(ColorText.bgtoBlue("  "));
-                        }else if(!(square instanceof MagicSquare) && square.isLand()){
+                        } else if(!(square instanceof MagicSquare) && square.isLand()){
                             System.out.print(ColorText.bgtoGrey("  "));
                         }
                     }
                     System.out.print(" | ");
-                }else if(player.getColor() == BLUE){
+                } else if(player.getColor() == BLUE){
                     System.out.print(" | ");
                     if (square.getPiece() instanceof Flag) {
                         displayPieceHintBLUE(square, "DR", "PE", "DP", BLUE, RED);
@@ -229,7 +229,7 @@ public class View {
                             System.out.print(ColorText.bgtoGreen("  "));
                         } else if (!square.isLand()) {
                             System.out.print(ColorText.bgtoBlue("  "));
-                        }else if(!(square instanceof MagicSquare) && square.isLand()){
+                        } else if(!(square instanceof MagicSquare) && square.isLand()){
                             System.out.print(ColorText.bgtoGrey("  "));
                         }
                     }
